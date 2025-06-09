@@ -1,6 +1,6 @@
 import React from "react";
 import tree from "../assets/tree.png";
-import logo from "../assets/logo2.png";
+import logo from "../assets/logo.png";
 function Main() {
   return (
     <>
