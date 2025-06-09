@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "sfPro";
+  src: url("./assets/fonts/SF-Pro-Text-Medium.otf") format("opentype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-family: "sfPro";
+  text-decoration: none;
+}
+
+body {
+  background-color: #f9ebe5;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-banner {
+  display: flex;
+  margin-right: -20vw;
+}
+
+.main-banner__tree img {
+  width: 40vw;
+  display: flex;
+  background-color: none;
+}
+
+.tittle {
+  height: 12svh;
+  width: 100vw;
+  display: flex;
+  font-size: 15svh;
+  flex-direction: column;
+  letter-spacing: 0.4vw;
+  margin-left: 27vw;
+}
+
+/* .tittle p {
+  background: linear-gradient(500deg, #ff631b, #ee3800);
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  border-radius: 25px;
+  padding: 25px;
+} */
+
+.tittle img {
+  width: 40vw;
+  margin-top: 15vw;
+}
+
+.tittle__subtittle {
+  font-size: 1.5vw;
+  margin-top: 1vw;
+}
+
+.tittle__subtittle p {
+  white-space: normal;
+  max-width: 50vw;
+  text-align: start;
+}
+
+.button {
+  padding: 1.3vw;
+  width: 15vw;
+  background: #f9ebe5;
+  color: #ee3800;
+  border: solid #ee3800;
+  border-radius: 60px;
+  font-size: 2vw;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  margin-top: 8vw;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #ff6a00, #ee3800);
+  color: #f9ebe5;
+}
