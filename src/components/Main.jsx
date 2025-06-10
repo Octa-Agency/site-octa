@@ -20,9 +20,6 @@ function Main() {
           <img src={tree} alt="" />
         </div>
       </div>
-      <div className="container">
-        <h1>container</h1>
-      </div>
     </>
   );
 }
