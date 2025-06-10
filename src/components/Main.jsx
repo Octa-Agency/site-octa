@@ -1,5 +1,5 @@
 import React from "react";
-import tree from "../assets/tree.png";
+import alga from "../assets/algas.png";
 import logo from "../assets/logo3.png";
 function Main() {
   return (
@@ -16,12 +16,9 @@ function Main() {
           </div>
           <button className="button">Button</button>
         </div>
-        <div className="main-banner__tree">
-          <img src={tree} alt="" />
+        <div className="alga">
+          <img src={alga} alt="" />
         </div>
-      </div>
-      <div className="container">
-        <h1>container</h1>
       </div>
     </>
   );

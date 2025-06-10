@@ -3,9 +3,6 @@ import React from "react";
 function Header() {
   return (
     <nav className="navbar">
-      <a href="#" className="navbar__itens--brand">
-        Octa
-      </a>
       <ul className="navbar__itens">
         <li></li>
         <li>
