@@ -1,0 +1,31 @@
+import React from "react";
+
+function Header() {
+  return (
+    <nav className="navbar">
+      <a href="#" className="navbar__itens--brand">
+        Octa
+      </a>
+      <ul className="navbar__itens">
+        <li></li>
+        <li>
+          <a href="#">Sobre</a>
+        </li>
+        <li className="navbar__dropdown">
+          <a href="#">Clientes</a>
+          <div className="navbar__dropdown--itens">
+            <a href="#">Contak Consultoria</a>
+            <a href="#">Panela Vereador</a>
+            <a href="#">Fundacao Panela Cheia</a>
+            <a href="#">Dom Realty</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Header;

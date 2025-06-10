@@ -16,6 +16,94 @@ body {
   background-color: #f9ebe5;
 }
 
+/* Navbar principal */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  padding: 20px;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar__itens--brand {
+  color: #ee3800;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* Lista de itens */
+.navbar__itens {
+  display: flex;
+  list-style: none;
+  gap: 3vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links principais */
+.navbar__itens li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+  display: block;
+  letter-spacing: 2px;
+}
+
+/* Hover no link */
+.navbar__itens li a:hover {
+  color: #ff590c;
+}
+
+/* Dropdown pai */
+.navbar__dropdown {
+  position: relative;
+}
+
+/* Itens do dropdown */
+.navbar__dropdown--itens {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9ebe5;
+  border-radius: 8px;
+  box-shadow: -5px 5px 10px 0px rgba(49, 49, 49, 0.1);
+  list-style: none;
+  padding: 20px 100px 20px 20px;
+  margin: 0;
+  flex-direction: column;
+  min-width: 400px;
+  z-index: 1000;
+}
+
+/* Itens do dropdown - links */
+.navbar__dropdown--itens li a {
+  color: black;
+  padding: 8px 12px;
+  display: block;
+  transition: background 0.2s ease;
+}
+
+/* Hover nos links do dropdown */
+.navbar__dropdown--itens li a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Mostrar dropdown ao passar o mouse no LI */
+.navbar__dropdown:hover .navbar__dropdown--itens {
+  display: flex;
+}
+
+a {
+  font-size: 1vw;
+}
+
+/* main */
+
 .main {
   display: flex;
   flex-direction: row;
@@ -32,6 +120,8 @@ body {
   background-color: none;
 }
 
+/* titulo */
+
 .tittle {
   height: 12svh;
   width: 100vw;
@@ -40,6 +130,7 @@ body {
   flex-direction: column;
   letter-spacing: 0.4vw;
   margin-left: 27vw;
+  margin-top: -4vw;
 }
 
 /* .tittle p {
@@ -54,9 +145,9 @@ body {
 } */
 
 .tittle img {
-  width: 45vw;
+  width: 25vw;
   margin-top: 15vw;
-  margin-left: -2.8vw;
+  margin-left: -0.4vw;
 }
 
 .tittle__subtittle {
@@ -69,6 +160,7 @@ body {
   max-width: 50vw;
   text-align: start;
 }
+/* botao */
 
 .button {
   padding: 1.3vw;
@@ -81,10 +173,23 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.5s ease;
-  margin-top: 8vw;
+  margin-top: 6vw;
 }
 
 .button:hover {
   background: linear-gradient(135deg, #ff6a00, #ee3800);
   color: #f9ebe5;
+}
+
+/* container historia */
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  width: 80vw;
+  background-color: #ffece6;
+  box-shadow: -5px 5px 10px 0px rgba(49, 49, 49, 0.2);
+  margin: 0 auto;
+  border-radius: 20px;
 }

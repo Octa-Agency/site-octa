@@ -1,6 +1,6 @@
 import React from "react";
 import tree from "../assets/tree.png";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo3.png";
 function Main() {
   return (
     <>
@@ -19,6 +19,9 @@ function Main() {
         <div className="main-banner__tree">
           <img src={tree} alt="" />
         </div>
+      </div>
+      <div className="container">
+        <h1>container</h1>
       </div>
     </>
   );
