@@ -83,7 +83,7 @@ body {
   color: black;
   padding: 8px 12px;
   display: block;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 /* Hover nos links do dropdown */
@@ -144,7 +144,6 @@ body {
   max-width: 70vw;
   text-align: start;
 }
-
 /* botao */
 
 .button {
@@ -168,7 +167,7 @@ body {
 }
 
 .alga {
-  margin-left: 40vw;
+  margin-left: 50vw;
   margin-top: 10svh;
 }
 
@@ -176,6 +175,40 @@ body {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.history-container {
+  display: flex;
+  height: 100vh;
+}
+
+.history-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.history-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.history-text {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9ebe5;
+}
+
+.title h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.title__history {
+  font-size: 1.5rem;
 }
 /* ======= MEDIA QUERIES ======= */
 
