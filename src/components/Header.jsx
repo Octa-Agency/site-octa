@@ -12,7 +12,6 @@ function Header() {
           <a href="#">Clientes</a>
           <div className="navbar__dropdown--itens">
             <a href="#">Contak Consultoria</a>
-            <a href="#">Panela Vereador</a>
             <a href="#">Fundacao Panela Cheia</a>
             <a href="#">Dom Realty</a>
           </div>

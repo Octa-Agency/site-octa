@@ -7,8 +7,6 @@ const App = () => {
     <>
       <Header />
       <Main />
-      <History />
-      <ItemList />
     </>
   );
 };

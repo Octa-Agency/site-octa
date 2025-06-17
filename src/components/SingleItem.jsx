@@ -1,15 +1,13 @@
 import React from "react";
-import brandingIcon from "../assets/branding.png";
-function SingleItem() {
+
+const SingleItem = ({ image, text, tittle }) => {
   return (
     <div className="single-item__container">
-      <img src={brandingIcon} alt="" />
-      <h2>Branding</h2>
-      <p>
-        Lorem um is simply dummy text of the printing and typesetting industry.
-      </p>
+      <img src={image} alt="Image error" />
+      <h2>{tittle}</h2>
+      <p>{text}</p>
     </div>
   );
-}
+};
 
 export default SingleItem;

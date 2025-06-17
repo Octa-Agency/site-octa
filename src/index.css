@@ -1,14 +1,12 @@
-@font-face {
-  font-family: "sfPro";
-  src: url("./assets/fonts/SF-Pro-Text-Medium.otf") format("opentype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-weight: normal;
-  font-family: "sfPro";
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -43,7 +41,6 @@ body {
 .navbar__itens li a {
   text-decoration: none;
   color: black;
-  font-weight: 200;
   transition: color 0.3s ease;
   padding: 10px 15px;
   display: block;
@@ -71,10 +68,10 @@ body {
   border-radius: 8px;
   box-shadow: -5px 5px 10px 0px rgba(49, 49, 49, 0.1);
   list-style: none;
-  padding: 20px 100px 20px 20px;
+  padding: 30px 100px 30px 30px;
   margin: 0;
   flex-direction: column;
-  min-width: 400px;
+  min-width: 500px;
   font-size: 1.2vw;
 }
 
@@ -240,13 +237,16 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 1vw;
-  justify-content: start;
-  background: #f35c05;
+  padding: 2vw;
+  background: #1f1f1f;
+  transition: all 0s ease;
   width: 20vw;
-  height: 19.5vw;
-  border-radius: 2vw;
+  height: 21vw;
   text-align: center;
+}
+
+.single-item__container:hover {
+  background: #ec4700;
 }
 
 .single-item__container img {
@@ -258,30 +258,43 @@ body {
   color: #f9ebe5;
   font-size: 2vw;
   font-weight: 600;
-  margin-top: 1vw;
 }
 
 .single-item__container p {
   margin-top: 10px;
-  font-size: 30px;
+  font-size: 1.4vw;
   color: #f9ebe5;
 }
 
 .item-list__tittle {
-  margin-top: 10vw;
+  margin-top: 20vh;
+  margin-bottom: 4vw;
   text-align: center;
-  font-weight: 800;
-  color: #f35c05;
-  font-size: 2vw;
+  color: #f9ebe5;
+  font-size: 4vw;
 }
 
 .item-list__container {
   display: grid;
   grid-template-columns: repeat(3, minmax(10svh, 21svh));
-  column-gap: 12vw;
-  row-gap: 2.5vw;
-  margin-top: 2vw;
+  column-gap: 10vw;
+  row-gap: 0.6vw;
+  margin-top: 15vh;
   margin-left: 17vw;
+}
+
+.bgg {
+  background-color: #315da0;
+}
+
+.teste {
+  max-width: 100%;
+  margin-top: -150px;
+}
+
+.testebg {
+  background-color: #ff440b;
+  margin-top: -270px;
 }
 
 /* ======= MEDIA QUERIES ======= */
@@ -442,6 +455,7 @@ body {
   .item-list__tittle {
     margin-top: 10vw;
     text-align: center;
+    font-family: "Cal Sans", sans-serif;
     font-weight: 800;
     color: #f35c05;
     font-size: 7vw;
