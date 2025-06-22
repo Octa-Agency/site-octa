@@ -33,11 +33,6 @@ export const iconsArray = [
     text: "midiaSocial",
   },
   {
-    image: propaganda,
-    tittle: "propaganda",
-    text: "propaganda",
-  },
-  {
     image: publico,
     tittle: "publico",
     text: "publico",

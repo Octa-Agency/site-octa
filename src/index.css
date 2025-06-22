@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #f9ebe5;
+  background-color: #fffbfa;
 }
 
 /* Navbar principal */
@@ -64,7 +64,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #f9ebe5;
+  background-color: #fffbfa;
   border-radius: 8px;
   box-shadow: -5px 5px 10px 0px rgba(49, 49, 49, 0.1);
   list-style: none;
@@ -143,23 +143,23 @@ body {
 /* botao */
 
 .button {
-  padding: 1vw;
-  width: 15vw;
-  background: #f9ebe5;
+  padding: 1.5vw;
+  width: 20vw;
+  background: #fffbfa;
   color: #ee3800;
   border: solid #ee3800;
   border-radius: 60px;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.5s ease;
-  margin-top: 6vw;
+  margin-top: 5vw;
   max-width: 300px;
 }
 
 .button:hover {
   background: linear-gradient(135deg, #ff6a00, #ee3800);
-  color: #f9ebe5;
+  color: #fffbfa;
 }
 
 /* alga img*/
@@ -187,7 +187,7 @@ body {
 } */
 
 .history-container {
-  background-color: #f9ebe5;
+  background-color: #fffbfa;
   margin: 0 auto;
   width: 95vw;
   display: flex;
@@ -239,7 +239,7 @@ body {
   flex-direction: column;
   padding: 2vw;
   background: #1f1f1f;
-  transition: all 0s ease;
+  transition: all 0.1s ease;
   width: 20vw;
   height: 21vw;
   text-align: center;
@@ -247,15 +247,17 @@ body {
 
 .single-item__container:hover {
   background: #ec4700;
+  transform: scale(1.03);
 }
 
 .single-item__container img {
+  margin-top: 2vh;
   width: 5vw;
   height: 5vw;
 }
 
 .single-item__container h2 {
-  color: #f9ebe5;
+  color: #fffbfa;
   font-size: 2vw;
   font-weight: 600;
 }
@@ -263,41 +265,125 @@ body {
 .single-item__container p {
   margin-top: 10px;
   font-size: 1.4vw;
-  color: #f9ebe5;
+  color: #fffbfa;
 }
 
 .item-list__tittle {
-  margin-top: 20vh;
+  margin-top: 40vh;
   margin-bottom: 4vw;
   text-align: center;
-  color: #f9ebe5;
+  color: #ec4700;
   font-size: 4vw;
 }
 
 .item-list__container {
   display: grid;
   grid-template-columns: repeat(3, minmax(10svh, 21svh));
+  justify-content: center;
   column-gap: 10vw;
   row-gap: 0.6vw;
-  margin-top: 15vh;
-  margin-left: 17vw;
+  margin-top: 12vh;
+  margin-right: 9vw;
+  padding-bottom: 10vh;
 }
 
-.bgg {
-  background-color: #315da0;
+/* CONTATO */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh;
+  margin-top: -1vh;
 }
 
-.teste {
-  max-width: 100%;
-  margin-top: -150px;
+form {
+  width: 60vw;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.testebg {
-  background-color: #ff440b;
-  margin-top: -270px;
+form h1 {
+  margin-bottom: 30px;
+  color: #ec4700;
+  font-size: 3vw;
+  font-weight: 600;
+  text-align: center;
 }
 
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #444;
+  font-size: 1vw;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ec4700;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #fff;
+  color: #ec4700;
+  border: none;
+  border-radius: 6px;
+  font-size: 1vw;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #ec4700;
+  color: #fff;
+}
+
+/* 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 /* ======= MEDIA QUERIES ======= */
+/* 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+-   */
 
 /* Telas pequenas - celulares (até 600px) */
 @media (max-width: 600px) {
@@ -335,8 +421,7 @@ body {
     flex-direction: column;
     margin: 0;
   }
-
-  .tittle {
+  vbb .tittle {
     margin-left: 0;
     font-size: 13vw;
     height: auto;
@@ -386,7 +471,7 @@ body {
   /* sobre a empresa */
 
   .history-container {
-    background-color: #f9ebe5;
+    background-color: #fffbfa;
     margin-left: -12vw;
     margin: 0 auto;
     width: 800px;
@@ -440,7 +525,7 @@ body {
   }
 
   .single-item__container h2 {
-    color: #f9ebe5;
+    color: #fffbfa;
     font-size: 10vw;
     font-weight: 600;
     margin-top: 1vw;
@@ -449,7 +534,7 @@ body {
   .single-item__container p {
     margin-top: 2vw;
     font-size: 7vw;
-    color: #f9ebe5;
+    color: #fffbfa;
   }
 
   .item-list__tittle {
@@ -457,7 +542,6 @@ body {
     text-align: center;
     font-family: "Cal Sans", sans-serif;
     font-weight: 800;
-    color: #f35c05;
     font-size: 7vw;
   }
 

@@ -4,6 +4,7 @@ import logo from "../assets/logo3.png";
 import History from "./History";
 import ItemList from "./ItemList";
 import teste from "../assets/database/teste.png";
+import Contact from "./Contact";
 
 function Main() {
   return (
@@ -18,16 +19,24 @@ function Main() {
               industry.
             </p>
           </div>
-          <button className="button">Button</button>
+          <button
+            className="button"
+            onClick={() =>
+              document
+                .getElementById("contato")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Melhore Seu Negócio
+          </button>
         </div>
         <div className="alga">
           <img src={alga} alt="" />
         </div>
       </div>
       <History />
-      <img src={teste} alt="" className="teste" />
-      <div className="testebg"></div>
       <ItemList items={7} />
+      <Contact />
     </>
   );
 }
