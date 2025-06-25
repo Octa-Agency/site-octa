@@ -357,6 +357,38 @@ button:hover {
   color: #fff;
 }
 
+/* Works */
+.single-item-work__container {
+  
+    margin-top: 7vw;
+    margin-bottom: 2vw; 
+}
+
+
+.single-item-work__container img {
+  width: 500px;  
+  box-shadow: -5px 5px 10px 0px rgba(49, 49, 49, 0.1);
+}
+
+.bgg1 h1 {      
+  margin-top: 1vw;
+    text-align: center;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+    color: #ee3800;   
+
+}
+
+.bgg1 {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh;
+  margin-top: -1vh;
+  flex-direction: column;
+}
+
 /* 
 - 
 - 
@@ -607,4 +639,6 @@ button:hover {
   .container {
     width: 85vw;
   }
+
 }
+

@@ -5,6 +5,8 @@ import History from "./History";
 import ItemList from "./ItemList";
 import teste from "../assets/database/teste.png";
 import Contact from "./Contact";
+import SigleItemWork from "./SigleItemWork";
+import { ItemListWork } from "./ItemListWork";
 
 function Main() {
   return (
@@ -37,6 +39,7 @@ function Main() {
       <History />
       <ItemList items={7} />
       <Contact />
+      <ItemListWork />
     </>
   );
 }
