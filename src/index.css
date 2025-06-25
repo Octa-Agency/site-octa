@@ -430,31 +430,32 @@ button:hover {
   }
 
   .tittle img {
-    width: 60vw;
+    width: 80vw;
     margin-left: 3vw;
     display: block;
   }
 
   .tittle__subtittle {
-    font-size: 3.4vw;
+    font-size: 5vw;
     max-width: 90vw;
     margin-left: 4vw;
     text-align: center;
   }
 
   .button {
-    width: 30vw;
-    height: 10vw;
+    width: 45vw;
+    height: 20vw;
     max-width: none;
-    font-size: 4vw;
-    margin-left: 4vw;
+    font-size: 5vw;
+    margin-left: 3vw;
     margin-top: 3svh;
     display: block;
   }
 
   .alga {
-    margin-left: 50vw;
-    margin-top: -50vw;
+    width: 100%;
+    margin-left: 54vw;
+    margin-top: 3vw;
   }
 
   .alga img {
