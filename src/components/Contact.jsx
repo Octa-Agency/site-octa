@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import treeR from "../assets/formTreeR.png";
+import treeL from "../assets/formTreeL.png";
 
 function Contact() {
   const form = useRef();
@@ -28,6 +30,7 @@ function Contact() {
 
   return (
     <div className="contact-container">
+      <img src={treeL} className="trees" alt="" />
       <form ref={form} onSubmit={sendEmail} id="contato">
         <h1>Contato</h1>
 
@@ -45,6 +48,7 @@ function Contact() {
 
         <button type="submit">Enviar</button>
       </form>
+      <img src={treeR} className="trees" alt="" />
     </div>
   );
 }

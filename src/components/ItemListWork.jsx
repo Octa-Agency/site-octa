@@ -4,8 +4,8 @@ import { WorksArray } from "../assets/database/works";
 
 export const ItemListWork = ({ itemsworks }) => {
   return (
-    <div className="bgg1">
-      <h1 className="item-list-work__title">Nossos Trabalhos</h1>
+    <div className="item-list-work__container">
+      <h1>Nossas Parcerias</h1>
       {WorksArray.slice(0, 1).map((currentObj, index) => (
         <SigleItemWork
           key={index}

@@ -3,12 +3,13 @@ import alga from "../assets/algas.png";
 import logo from "../assets/logo3.png";
 import History from "./History";
 import ItemList from "./ItemList";
-import teste from "../assets/database/teste.png";
 import Contact from "./Contact";
-import SigleItemWork from "./SigleItemWork";
 import { ItemListWork } from "./ItemListWork";
+import useScrollReveal from "../scripts/useScrollrEVEAL";
+import tiraDecorativa from "../assets/linhaDecorativa.png";
 
 function Main() {
+  useScrollReveal();
   return (
     <>
       <div className="main">
@@ -17,8 +18,8 @@ function Main() {
           <img src={logo} alt="" />
           <div className="tittle__subtittle">
             <p>
-              Lorem um is simply dummy text of the printing and typesetting
-              industry.
+              Comunicação que transforma, design que conecta, propósito em cada
+              pixel.
             </p>
           </div>
           <button
@@ -36,10 +37,25 @@ function Main() {
           <img src={alga} alt="" />
         </div>
       </div>
-      <History />
-      <ItemList items={7} />
-      <Contact />
-      <ItemListWork />
+      <div className="reveal">
+        <History />
+      </div>
+      <div>
+        <img
+          src={tiraDecorativa}
+          className="tira-decorativa"
+          alt="image error"
+        />
+      </div>
+      <div className="reveal">
+        <ItemList items={7} />
+      </div>
+      <div className="reveal">
+        <Contact />
+      </div>
+      <div className="reveal">
+        <ItemListWork />
+      </div>
     </>
   );
 }

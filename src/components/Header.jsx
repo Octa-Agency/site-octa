@@ -11,9 +11,7 @@ function Header() {
         <li className="navbar__dropdown">
           <a href="#">Clientes</a>
           <div className="navbar__dropdown--itens">
-            <a href="#">Contak Consultoria</a>
-            <a href="#">Fundacao Panela Cheia</a>
-            <a href="#">Dom Realty</a>
+            <a href="https://contakconsultoria.com.br">Contak Consultoria</a>
           </div>
         </li>
         <li>
