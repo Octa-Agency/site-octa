@@ -5,8 +5,9 @@ import History from "./History";
 import ItemList from "./ItemList";
 import Contact from "./Contact";
 import { ItemListWork } from "./ItemListWork";
-import useScrollReveal from "../scripts/useScrollrEVEAL";
+import useScrollReveal from "../scripts/useScrollReveal";
 import tiraDecorativa from "../assets/linhaDecorativa.png";
+import algaPq from "../assets/algas-pq.png";
 
 function Main() {
   useScrollReveal();
@@ -23,7 +24,7 @@ function Main() {
             </p>
           </div>
           <button
-            className="button"
+            className="main__button"
             onClick={() =>
               document
                 .getElementById("contato")
@@ -34,7 +35,10 @@ function Main() {
           </button>
         </div>
         <div className="alga">
-          <img src={alga} alt="" />
+          <picture>
+            <source media="(max-width: 1024px)" srcSet={algaPq} />
+            <img src={alga} alt="" />
+          </picture>
         </div>
       </div>
       <div className="reveal">

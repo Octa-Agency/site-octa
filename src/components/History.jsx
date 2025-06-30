@@ -4,7 +4,7 @@ import poster from "../assets/bannerHome.png";
 function History() {
   return (
     <>
-      <div className="history-container">
+      <div className="history-container" id="sobre">
         <div className="history-text">
           <div className="title">
             <h1>Quem é a Octa?</h1>

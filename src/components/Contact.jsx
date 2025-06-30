@@ -18,7 +18,6 @@ function Contact() {
       )
       .then(
         (result) => {
-          alert("Mensagem enviada com sucesso!");
           form.current.reset();
         },
         (error) => {
@@ -29,9 +28,9 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contato">
       <img src={treeL} className="trees" alt="" />
-      <form ref={form} onSubmit={sendEmail} id="contato">
+      <form ref={form} onSubmit={sendEmail}>
         <h1>Contato</h1>
 
         <label htmlFor="nome">Nome:</label>
@@ -46,7 +45,9 @@ function Contact() {
         <label htmlFor="assunto">Assunto do contato:</label>
         <textarea name="assunto" rows="4" required></textarea>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" className="form__button">
+          Enviar
+        </button>
       </form>
       <img src={treeR} className="trees" alt="" />
     </div>

@@ -6,16 +6,40 @@ function Header() {
       <ul className="navbar__itens">
         <li></li>
         <li>
-          <a href="#">Sobre</a>
-        </li>
-        <li className="navbar__dropdown">
-          <a href="#">Clientes</a>
-          <div className="navbar__dropdown--itens">
-            <a href="https://contakconsultoria.com.br">Contak Consultoria</a>
-          </div>
+          <button
+            className="navbar__itens--button"
+            onClick={() =>
+              document
+                .getElementById("sobre")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Sobre
+          </button>
         </li>
         <li>
-          <a href="#">Contato</a>
+          <button
+            className="navbar__itens--button"
+            onClick={() =>
+              document
+                .getElementById("clientes")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Clientes
+          </button>
+        </li>
+        <li>
+          <button
+            className="navbar__itens--button"
+            onClick={() =>
+              document
+                .getElementById("contato")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Contato
+          </button>
         </li>
       </ul>
     </nav>

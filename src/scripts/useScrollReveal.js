@@ -8,7 +8,7 @@ function useScrollReveal() {
       reveals.forEach((el) => {
         const top = el.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
-        if (top < windowHeight - 100) {
+        if (top < windowHeight - 180) {
           el.classList.add("active");
         }
       });
