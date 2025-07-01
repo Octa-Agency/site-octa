@@ -8,6 +8,7 @@ import { ItemListWork } from "./ItemListWork";
 import useScrollReveal from "../scripts/useScrollReveal";
 import tiraDecorativa from "../assets/linhaDecorativa.png";
 import algaPq from "../assets/algas-pq.png";
+import Rodape from "./Rodape";
 
 function Main() {
   useScrollReveal();
@@ -59,6 +60,9 @@ function Main() {
       </div>
       <div className="reveal">
         <ItemListWork />
+      </div>
+      <div>
+        <Rodape />
       </div>
     </>
   );
