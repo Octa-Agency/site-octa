@@ -31,7 +31,7 @@ function Contact() {
     <div className="contact-container" id="contato">
       <img src={treeL} className="trees" alt="" />
       <form ref={form} onSubmit={sendEmail}>
-        <h1>Contato</h1>
+        <h1>Fale Conosco!</h1>
 
         <label htmlFor="nome">Nome:</label>
         <input type="text" name="nome" required />
