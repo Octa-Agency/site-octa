@@ -1,5 +1,5 @@
 import React from "react";
-import poster from "../assets/bannerHome.png";
+import poster from "../assets/bannerHome.jpeg";
 
 function History() {
   return (

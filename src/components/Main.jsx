@@ -7,7 +7,7 @@ import Contact from "./Contact";
 import { ItemListWork } from "./ItemListWork";
 import useScrollReveal from "../scripts/useScrollReveal";
 import tiraDecorativa from "../assets/linhaDecorativa.png";
-import algaPq from "../assets/algas-pq.png";
+import algaPq from "../assets/algas-pq-menor.png";
 import Rodape from "./Rodape";
 
 function Main() {
@@ -53,13 +53,13 @@ function Main() {
         />
       </div>
       <div className="reveal">
+        <ItemListWork />
+      </div>
+      <div className="reveal">
         <ItemList items={7} />
       </div>
       <div className="reveal">
         <Contact />
-      </div>
-      <div className="reveal">
-        <ItemListWork />
       </div>
       <div>
         <Rodape />
