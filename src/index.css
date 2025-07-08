@@ -484,6 +484,8 @@ textarea:focus {
     width: 80vw;
     margin-top: 5vh;
     padding: 5vw;
+    background: linear-gradient(135deg, #ff6a00, #ee3800);
+    color: #fffbfa;
   }
 
   .alga {
@@ -676,6 +678,8 @@ textarea:focus {
     max-width: 700px;
     position: relative;
     z-index: 10;
+    background: linear-gradient(135deg, #ff6a00, #ee3800);
+    color: #fffbfa;
   }
 
   .alga {
