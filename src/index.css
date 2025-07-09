@@ -296,6 +296,7 @@ body {
 }
 
 form {
+  margin-top: 10vh;
   width: 60vw;
   background: #fff;
   padding: 40px;
@@ -379,7 +380,6 @@ textarea:focus {
 }
 
 .single-item-work__container {
-  margin-top: 7vw;
   margin-bottom: 2vw;
 }
 
@@ -538,6 +538,10 @@ textarea:focus {
     height: 35vh;
     padding: 10vw;
     margin: auto;
+  }
+
+  .single-item__container:hover {
+    transform: scale(1);
   }
 
   .trees {
@@ -742,6 +746,10 @@ textarea:focus {
     border-bottom-right-radius: 10px;
   }
 
+  .single-item__container:hover {
+    transform: scale(1);
+  }
+
   .trees {
     display: none;
   }
@@ -844,6 +852,10 @@ textarea:focus {
     color: #fffbfa;
     font-size: 4vw;
   }
+
+  .footer img {
+    max-width: 25%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 884px) {
@@ -897,6 +909,8 @@ textarea:focus {
     margin-left: 4vw;
     padding: 4vw;
     max-width: 700px;
+    background: linear-gradient(135deg, #ff6a00, #ee3800);
+    color: #fffbfa;
   }
 
   .alga {
@@ -957,6 +971,10 @@ textarea:focus {
     background-color: #ec4700;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+  }
+
+  .single-item__container:hover {
+    transform: scale(1);
   }
 
   .trees {
@@ -1059,6 +1077,10 @@ textarea:focus {
   .single-item-work__container p {
     color: #fffbfa;
     font-size: 4vw;
+  }
+
+  .footer img {
+    max-width: 25%;
   }
 }
 
@@ -1241,7 +1263,7 @@ textarea:focus {
     padding: 5vw;
     margin-top: 8vh;
     flex-direction: column;
-    background: url(./assets/workBg.jpeg);
+    background: url(./assets/workBg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -53,10 +53,10 @@ function Main() {
         />
       </div>
       <div className="reveal">
-        <ItemListWork />
+        <ItemList items={7} />
       </div>
       <div className="reveal">
-        <ItemList items={7} />
+        <ItemListWork />
       </div>
       <div className="reveal">
         <Contact />
